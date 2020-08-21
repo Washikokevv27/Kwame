@@ -9,4 +9,8 @@ var month = parseInt(monthOfBirth);
 var date = parseInt(dateOfBirth);
 alert([century] + [year]); 
 
-Day  (d) = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date ) %7
+function findWeekDay(w) {
+    day  = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date ) %7  
+    return(day)
+}
+alert(findWeekDay())
