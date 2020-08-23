@@ -22,4 +22,21 @@ function findWeekDay(d){
  }
  else {
      nDayBorn=nDay;
- }; 
+ };
+ 
+ var weekDay = ["Monday" , "Teusday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday"]
+ alert(weekDay[nDayBorn]);
+
+ var maleAkanName = ["Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi"];
+ var femaleAkanName = ["Adwaa", "Abenaa", "Akua", "Yaa", "Afua", "Ama", "Akosua"];
+ var genderNonConforming = ["Kwadwo-Adwaa", "Kwabena-Abenaa", "Kwaku-Akua", "Yaw-Yaa", "Kofi-Afua", "Kwame-Ama", "Kwasi-Akosua"];
+
+ if (genderAtBirth==='male') {
+    alert('Your Akan name is ' + (maleAkanName[nDayBorn]) + '!');
+}
+else if (genderAtBirth==='gnc') {
+    alert('Your Akan name is ' + (genderNonConforming[nDayBorn]) + '!');
+ }
+else {
+    alert('Your Akan name is ' + (femaleAkanName[nDayBorn]) + '!');
+}
