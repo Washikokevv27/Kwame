@@ -1,7 +1,7 @@
-var dateOfBirth = prompt ('please enter birth date');
-var monthOfBirth = prompt ('please enter birth month');
-var yearOfBirth = prompt ('please enter birth year');
-var genderAtBirth = prompt ('please enter gender assigned at birth')
+var dateOfBirth = document.getElementById("dateOfBirth").value
+var monthOfBirth = document.getElementById("monthOfBirth").value
+var yearOfBirth = document.getElementById("yearOfBirth").value
+var genderAtBirth = document.getElementById("genderAtBirth").value
 alert ('My Birthday is ' + [dateOfBirth] + '/' + [monthOfBirth] + '/' + [yearOfBirth]);
 
 var century = parseInt(yearOfBirth[0]+yearOfBirth[1]);
