@@ -24,7 +24,7 @@ function findWeekDay(d){
      nDayBorn=nDay;
  };
  
- var weekDay = ["Monday" , "Teusday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday"]
+ var weekDay = ["Monday" , "Tusday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday"]
  alert(weekDay[nDayBorn]);
 
  var maleAkanName = ["Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi"];
