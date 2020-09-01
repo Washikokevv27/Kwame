@@ -1,38 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="javascript" href="js/script.js">
-    <title>Validation Calculator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!DOCTYPE html>	
+<html lang="en">	
+<head>	
+    <meta charset="UTF-8">	   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">	       
+    <title>Validation Calculator</title>	  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento,Playfair+Display+SC,Sorts+Mill+Goudy &display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Gugi|Kalam" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">	    
     <link rel="stylesheet" href="styles.css">
-  
 </head>
-<body id="Home">
-
-    <!--Navbar-->  	  
-      <nav id="navbar">
-         
-        <h2><a href="Home"><span class="text-primary">Validation</span>Calculator</a></h2>
-
-           <p>This web application takes your birthday and calculates the day of the week that you were born.</p>
-
-      </nav>
-      
-    <div class="login-page">
-        <div class="form">
-            <form class="findWeekDay"></form>
-            <p>Find Your Week Day</p>
-                <input type="text" id= "dateOfBirth" placeholder="please enter birth date"/>
-                <input type="text" id="monthOfBirth" placeholder="please enter birth month"/>
-                <input type="text" id="yearOfBirth" placeholder="please enter birth year"/>
-                <input type="text" id="genderAtBirth" placeholder="please enter gender assigned at birth"/>
-                <button type="submit" class="btn btn-primary">SUMMIT</button>
-            </form>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
-    
-</body>
+<body class="container-fluid" style="background-image:url(image/38861794_10156520286915138_1774289391280193536_o.jpg);">	
+  <div id="heading"> 	   
+    <img src="image/38861794_10156520286915138_1774289391280193536_o.jpg" alt=" ">	  
+    <h1>Akan Names</h1>	    
+    <h2 id="get">This web application takes your birthday and calculates the day of the week that your were born.</h2>	    
+  </div>	  
+  <div class="overlay">	  
+      <div class="container">	      
+        <h2>Enter Your Details Here!</h2>	      
+        <form name="myForm" class="form" onsubmit="validate();">	        
+          <div class="form-group">	          
+            <label for="number">Year of Birth:</label>	           
+            <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 2019 if born in 2019" name="year">	            
+          </div>	          
+          <div class="form-group">	          
+            <label for="month">Month of Birth:</label>	            
+            <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">	            
+          </div>	          
+          <div class="form-group">	         
+            <label for="date">Date of Birth:</label>	           
+            <input type="number" class="form-control" id="date" placeholder="Date of Birth" name="date">	           
+          </div>	          
+          <div class="form-group">	          
+            <label for="month">Gender</label><br>	            
+            <div class="form-check-inline">	           
+              <label class="form-check-label">	            
+                <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 	               
+              </label>	              
+            </div>	            
+            <div class="form-check-inline">	            
+              <label class="form-check-label">	              
+                <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 	                 
+              </label>	              
+            </div>	            
+          </div>	         
+          <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>	          
+          <br>	          
+        </form>	       
+        <p id="results"> </p>	     
+      </div>	    
+  </div>	
+  <div class="card-deck">	  
+    <div class="card ">	   
+      <div class="card-body text-center">	     
+        <p class="card-text">Akan names are derived from Ghanian culture. Get your Akan name by filling the form above!</p>	        
+      </div>	     
+    </div>	    
+    <div class="card ">	    
+        <div class="card-body text-center">	       
+          <p class="card-text">Names are based on gender and the date you were born. <br>	          
+            <span class="fa-stack fa-lg">	          
+                <i class="fa fa-globe fa-stack-1x" style="color:rgb(188, 222, 252)"></i>	               
+              </span><a href="http://www.afropedea.org/akan-names"> More info on Akan names</a>	              
+          </p>	          
+        </div>	       
+      </div>	     
+      <div class="card ">	  
+        <div class="card-body text-center">	        
+          <p class="card-text">Frequently in Ghana, children are given their first name as a 'day name' 	          
+            which corresponds to the day in the week they were born.</p>	           
+        </div>	      
+      </div>	      
+  </div>	 
+  <footer class="page-footer ">	  <footer class="page-footer ">
+    <div class="footer-copyright text-center py-3">Copyright © 2020:	   
+      <a href="https://github.com/Washikokevv27"> Kelvin Washiko</a>	  
+    </div>	  
+  </footer>	  
+<script src="js/script.js"></script>
+</body>	
 </html>
