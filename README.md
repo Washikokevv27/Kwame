@@ -67,3 +67,6 @@ True value is output. Output example: **You were born on Sunday and Your akan na
 * Some output are not as accurate as expected..
 ## Contact Information 
 If you have any question or contributions, please email me at [washikokevv27@gmail.com]
+
+- ## License
+[MIT](https://github.com/Washikokevv27/Kwame/blob/master/LICENSE)
